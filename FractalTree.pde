@@ -13,7 +13,7 @@ public void draw(){
 	background(0);   
 	stroke(255);
 	drawBranches(width/2,height, theLength, -Math.PI/2, theWeight);
-	if(theLength<300){
+	if(theLength<200){
 		theLength++;
 		theWeight+=.05;
 		branchAngle+=0.1;
