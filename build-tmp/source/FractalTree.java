@@ -22,7 +22,7 @@ private int smallestBranch = 2;
 private double branchAngle = 0;  
 private float theWeight = 1;
 private int theLength = 1;
-private float incrementer = 1.5f;
+private float incrementer = 1.4f;
 public void setup(){   
 	size(600,600);    
 	frameRate(30); 
@@ -31,7 +31,7 @@ public void draw(){
 	background(0);   
 	stroke(255);
 	drawBranches(width/2,height, theLength, -Math.PI/2, theWeight);
-	if(theLength<245){
+	if(theLength<200){
 		theLength++;
 		theWeight+=.05f;
 		branchAngle+=0.1f;

@@ -4,7 +4,7 @@ private int smallestBranch = 2;
 private double branchAngle = 0;  
 private float theWeight = 1;
 private int theLength = 1;
-private float incrementer = 1.5;
+private float incrementer = 1.4;
 public void setup(){   
 	size(600,600);    
 	frameRate(30); 
