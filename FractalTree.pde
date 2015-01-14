@@ -1,6 +1,6 @@
 import java.lang.*;
 private double fractionLength = .8; 
-private int smallestBranch = 1; 
+private int smallestBranch = 2; 
 private double branchAngle = 0;  
 private float theWeight = 1;
 private int theLength = 1;
@@ -13,7 +13,7 @@ public void draw(){
 	background(0);   
 	stroke(255);
 	drawBranches(width/2,height, theLength, -Math.PI/2, theWeight);
-	if(theLength<200){
+	if(theLength<300){
 		theLength++;
 		theWeight+=.05;
 		branchAngle+=0.1;
