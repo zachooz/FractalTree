@@ -1,6 +1,6 @@
 import java.lang.*;
 private double fractionLength = .8; 
-private int smallestBranch = 2; 
+private int smallestBranch = 1; 
 private double branchAngle = 0;  
 private float theWeight = 1;
 private int theLength = 1;
