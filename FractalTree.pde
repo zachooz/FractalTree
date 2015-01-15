@@ -13,10 +13,12 @@ public void draw(){
 	background(0);   
 	stroke(255);
 	drawBranches(width/2,height, theLength, -Math.PI/2, theWeight);
-	if(theLength<200){
+	if(theLength<180){
 		theLength++;
 		theWeight+=.05;
 		branchAngle+=0.1;
+	} else {
+		noLoop();
 	}
 } 
 public void drawBranches(int x,int y, double branchLength, double angle, float weight) {  
@@ -24,7 +26,7 @@ public void drawBranches(int x,int y, double branchLength, double angle, float w
 	weight=(float)(weight/1.5);   
 	if(branchLength > smallestBranch){
 		line(x, y, (float)(x + (branchLength*Math.cos(angle))), (float)(y + (branchLength*Math.sin(angle))));
-		drawBranches((int)(x + (branchLength*Math.cos(angle))),(int)(y + (branchLength*Math.sin(angle))), branchLength/incrementer, angle+branchAngle,weight);
+		drawBranches((int)(x + (branchLength*Math.cos(angle))),(int)(y + (branchLength*Math.sin(angle))), branchLength/incrementer, angle+branchAngle+Math.random(),weight);
 		drawBranches((int)(x + (branchLength*Math.cos(angle))),(int)(y + (branchLength*Math.sin(angle))), branchLength/incrementer, angle-branchAngle,weight); 
 	}
 } 
