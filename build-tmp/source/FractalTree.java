@@ -36,7 +36,7 @@ public void draw(){
 	if(branchAngle<-1)
 		bL=true;
 	drawBranches(width/2,height, theLength, -Math.PI/2, theWeight);
-	if(theLength<175){
+	if(theLength<178){
 		theLength++;
 		theWeight+=.05f;
 		if(bL)
